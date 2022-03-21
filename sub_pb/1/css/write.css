@@ -1,0 +1,134 @@
+@charset utf-8;
+
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 100;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');}
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 300;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');}
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 400;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');}
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 500;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');}
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 700;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype');}
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 900;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');}
+
+* {margin: 0; padding: 0; list-style: none;}
+a {text-decoration: none; display: block;}
+/* write */
+body {
+    background: rgba(1,1,1,.8);
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#write {
+    position: relative;
+    width: 810px;
+    margin: 50px auto 0 auto;
+    padding: 50px;
+    background: url(../img/write-bg.jpg)no-repeat center/cover;
+}
+.write-info {
+    width: 268px;
+    float: left;
+}
+.write-area {
+    width: 480px;
+    float: left;
+    margin-left: 50px;
+}
+#write::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.wr-img {
+    width: 268px; height: 318px;
+    overflow: hidden;
+}
+.wr-img img {
+    width: 100%;
+}
+.wr-text span {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.wr-text p {
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 35px;
+}
+.wr-text i {
+    width: 72px; height: 30px;
+    display: block;
+    font-size: 13px;
+    font-style: normal;
+    border: 1px solid #a8a8a8;
+    line-height: 30px;
+    text-align: center;
+    color: #2d2d2d;
+    margin: 10px auto 0 auto;
+}
+.wr-text a {
+    width: 270px; height: 60px;
+    color: #fff;
+    background: #ff4f6c;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 60px;
+    margin-top: 30px;
+}
+.area-container {
+    width: 100%;
+    margin-bottom: 27px;
+}
+.area-container h5 {
+    font-size: 16px;
+    color: #2d2d2d;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.area-container p {
+    font-size: 13px;
+    color: #2d2d2d;
+    line-height: 20px;
+}
+.area-container p::before {
+    content: "·";
+    margin-right: 5px;
+}
+
+
+
+.closed {
+    position: absolute; top: 15px; right: 15px;
+    cursor: pointer;
+}
+
+
+
+/* edit */
+.edit-img {
+    width: 268px; height: 318px;
+    overflow: hidden;
+    background: #eee;
+}
+.edit-img input {
+    display: block;
+    width: 80px;
+    margin: 140px auto 0 auto;
+}
+.wr-text input[type="text"] {
+    width: 214px; height: 22px;
+    margin: 5px 0;
+    text-align: center;
+}
+.wr-text input:first-child {
+    margin-top: 10px;
+}
+#write button {
+    width: 45px;
+    margin-left: 5px;
+}
+.write-area input[type="text"] {
+    width: 425px; height: 22px;
+    margin: 5px 0;
+    text-align: center;
+}

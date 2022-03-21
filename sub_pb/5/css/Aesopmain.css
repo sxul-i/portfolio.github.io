@@ -1,0 +1,262 @@
+@charset="UTF-8";
+*{margin: 0; padding: 0;}
+body {background: #fffef2;}
+
+#header {
+    border-top: 6px solid #252525;
+    position: relative;
+}
+#footer {
+    border-bottom: 10px solid #252525;
+}
+#header > div.bgSlider {
+    height: 750px;
+    background-image:url('../img/AesopBg1.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+}
+#header > div.headerInner {
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+#header > div.headerInner ul li {
+    display: inline-block;
+}
+#header > div.headerInner ul {
+    float: left;
+    margin-top: 15px;
+    margin-left: 40px;
+}
+#header > div.headerInner > div ul {
+    margin-top: 15px;
+    margin-right: 40px;
+}
+#header > div.headerInner > div > ul > li:nth-child(2) > a {
+    font-size: 12px;
+}
+#header a, #contentsArea > article:nth-child(2) > div > a, #contentsArea > article:nth-child(3) > div > div.text > a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+}
+#header > div.headerInner > nav ul a {
+    padding: 10px 25px;
+}
+#header > div.headerInner > div ul a {
+    padding: 10px 20px;
+}
+#header > div.headerInner > div:nth-of-type(1) {
+    float: right;
+}
+#headerInner:after, #contentsArea > article:nth-child(2):after, #contentsArea > article:nth-child(3) > div:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#header > div.headerInner > div > h1 > a {
+    display: block;
+    width: 150px;
+    margin: 240px 0 0 65px;
+}
+#header > div.headerInner h1 img {
+    width: 120px;
+}
+#contentsArea {
+    text-align: center; 
+}
+#contentsArea h2 {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+#contentsArea > article:nth-child(2), #contentsArea > article:nth-child(3) {
+    width: 1200px;
+    padding: 100px 0;
+    margin: 0 auto;
+}
+#contentsArea > article:nth-child(3) {
+    text-align: left; 
+}
+#contentsArea > article:nth-child(2) > div > h3 {
+    font-size: 25px;
+    margin-top: 30px;
+    font-weight: normal;
+}
+#contentsArea > article:nth-child(2) > div > p:nth-child(3) {
+    margin-top: 40px;
+    line-height: 28px;
+}
+#contentsArea > article:nth-child(2) > div a {
+    width: 300px;
+    height: 50px;
+    border: 1px solid rgba(1,1,1,0.2);
+    text-align: center;
+    line-height: 50px;
+    margin: 35px auto 0 auto;
+}
+#contentsArea > article:nth-child(2) > div > a:hover {
+    background: #333333;
+    color: #fff;
+}
+#contentsArea > article:nth-child(2) > div a img {
+    width: 11px;
+    margin-bottom: 1px;
+}
+#contentsArea > article:nth-child(2) > div > div {
+    width: 200px;
+    height: 300px;
+    background: url('../img/product1.png') no-repeat center/cover;
+    float: left;
+    margin-top: 50px;
+}
+#contentsArea > article:nth-child(2) > div > div:nth-of-type(1) {
+    margin-left: 200px;
+}
+#contentsArea > article:nth-child(2) > div > div:nth-of-type(2) {
+    background-image: url('../img/product2.png');
+}
+#contentsArea > article:nth-child(2) > div > div:nth-of-type(3) {
+    background-image: url('../img/product3.png');
+}
+#contentsArea > article:nth-child(2) > div > div:nth-of-type(4) {
+    background-image: url('../img/product4.png');
+}
+#contentsArea > article:nth-child(3) > div:first-child {
+    margin-bottom: 150px;
+}
+#contentsArea > article:nth-child(3) > div > div.text > p:nth-child(1) {
+    margin-top: 150px;
+}
+#contentsArea > article:nth-child(3) > div > div.text h3 {
+    font-size: 25px;
+    margin-top: 30px;
+    font-weight: normal;
+}
+#contentsArea > article:nth-child(3) > div > div.text > p:nth-child(3) {
+    margin-top: 40px;
+    line-height: 28px;
+}
+#contentsArea > article:nth-child(3) > div > div.text > a {
+    width: 200px;
+    height: 55px;
+    border: 1px solid rgba(1,1,1,0.2);
+    text-align: center;
+    line-height: 55px;
+    margin-top: 35px;
+}
+#contentsArea > article:nth-child(3) > div > div.text > a:hover {
+    background: #333333;
+    color: #fff;
+}
+#contentsArea > article:nth-child(3) > div > div.text {
+    width: 500px;
+    height: 600px;
+    float: left;
+}
+#contentsArea > article:nth-child(3) > div > div.clickSlider {
+    float: left;
+    position: relative;
+}
+#contentsArea > article:nth-child(3) > div > div.clickSlider img {
+    width: 700px;
+    height: 600px;
+}
+#contentsArea > article:nth-child(3) > div > div.clickSlider a {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.clickSlider a:nth-child(1) ~ a, .clickSlider2 a:nth-child(1) ~ a {
+    display: none;
+}
+.line {
+    width: 50px;
+    height: 2px;
+    background: rgba(1,1,1,0.2);
+    margin: 0 auto;
+}
+.products {
+    width: 960px;
+    margin: 80px auto;
+}
+.products > h3 {
+    font-size: 25px;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+.products:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.products div a {
+    display: block;
+    height: 400px;
+}
+.products div {
+    float: left;
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    background: url('../img/img1.jpg') no-repeat center/cover;
+    opacity: 0;
+    transform: translateY(-40px);
+    transition: all 0.5s ease-in;
+}
+.products div.showing {
+    opacity: 1;
+    transform: translateY(0);
+}
+.products div:nth-child(2) {background-image: url('../img/img2.jpg');}
+.products div:nth-child(3) {background-image: url('../img/img3.jpg');}
+.products div:nth-child(4) {background-image: url('../img/img4.jpg');}
+.products div:nth-child(5) {background-image: url('../img/img5.jpg');}
+.products div:nth-child(6) {background-image: url('../img/img6.jpg');}
+.products div:nth-child(7) {background-image: url('../img/img7.jpg');}
+.products div:nth-child(8) {background-image: url('../img/img8.jpg');}
+.products div:nth-child(9) {background-image: url('../img/img9.jpg');}
+#footer {
+    text-align: center;
+}
+#footer > .footerInner {
+    background: #333333;
+    padding: 50px 0;
+}
+#footer > .footerInner > form fieldset {
+    width: 500px;
+    margin: 0 auto;
+    border: none;
+}
+#footer > .footerInner > form p {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 auto 10px auto;
+}
+#footer > .footerInner > form label {
+    color: rgba(255,255,255,.4);
+    font-size: 12px;
+}
+#footer > .footerInner > form input {
+    height: 20px;
+    margin-bottom: 15px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,.4);text-indent: 8px;
+    color: #fff;
+    font-weight: 300;
+}
+#footer > .footerInner > form button {
+    margin-top: 10px; 
+    width: 100px;
+    height: 30px;
+    background: rgba(1,1,1,0.6);
+    border: none;
+    color: rgba(255,255,255,0.6);
+    font-size: 12px;
+    cursor: pointer;
+}

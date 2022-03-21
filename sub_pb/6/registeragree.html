@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>UPBOOK</title>
+
+    <!--css-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    
+    <!--js-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/swiper.min.js"></script>
+
+</head>
+<body>
+    <div class="wrap">
+        <header id="header">
+                <div class="hd-top">
+                    <div class="container">
+                        <div class="gnb">
+                            <div class="gnb-btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="gnb-box"></div>
+                        </div>
+                        <div class="logo">
+                            <h2>
+                                <a href="index.html"><img src="img/logo.png" alt="업북 로고"></a>
+                            </h2>
+                        </div>
+                        <div class="search">
+                            <div class="search-btn">
+                                <input type="button">
+                            </div>
+                            <form action="">
+                                <fieldset>
+                                    <input type="text" placeholder="작품/작가명을 검색해주세요." title="검색어 입력"> <img src="img/ico-search.png" alt="검색">
+                                    <input type="submit" value="검색" title="검색">
+                                    <a href="javascript:;" class="close-btn"><img src="img/ico-mb-close-btn.png" alt="닫기"></a>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="login">
+                            <ul>
+                                <li><a href="login.html">로그인</a></li>
+                                <li><a href="registeragree.html">회원가입</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="gnb-list">
+                    <div class="container">
+                        <nav class="nav mb-gnb">
+                            <ul>
+                                <li><a href="index.html">홈</a></li>
+                                <li><a href="best.html">베스트</a></li>
+                                <li><a href="#">무협</a></li>
+                                <li><a href="#">판타지</a></li>
+                                <li><a href="#">현대 판타지</a></li>
+                                <li><a href="#">로맨스</a></li>
+                                <li><a href="point.html">포인트충전</a></li>
+                                <li><a href="notice.html">고객센터</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+        </header>
+        <section id="login" class="registeragree">
+            <div class="container">
+                <div class="title">
+                    <h3>회원가입</h3>
+                </div>
+                <div class="login-main">
+                    <div class="email">
+                        <p>아이디(이메일)</p>
+                        <input type="text" name="email_1" id="email_1">
+                        <span>@</span>
+                        <input type="text" name="email_2" id="email_2" style="ime-mode:disabled;">
+                        <select name="email_3" id="email_3">
+                            <option value="naver.com">naver.com</option>
+                            <option value="gmail.com">gmail.com</option>
+                            <option value="nate.com">nate.com</option>
+                            <option value="daum.net">daum.net</option>
+                            <option value="yahoo.com">yahoo.com</option>
+                            <option value="hotmail.com">hotmail.com</option>
+                            <option value="etc" selected="selected">직접입력</option>
+                        </select>
+                    </div>
+                    <div class="password">
+                        <p>비밀번호</p>
+                        <input type="text">
+                    </div>
+                    <div class="pass-confirm">
+                        <p>비밀번호 확인</p>
+                        <input type="text">
+                    </div>
+                    <div class="pass-confirm">
+                        <input type="checkbox" id="agree"><label for="agree">이용약관에 동의합니다.</label>
+                        <textarea name="" id=""></textarea>
+                    </div>
+                </div>
+                <input type="submit" value=" 가입하기" class="login-btn">
+                <script type="text/javascript">
+                    $(document).ready(function(){
+                        $("#email_3").change(function(){
+                            var email_3 = $(this).val(); 
+                            if(email_3 == "etc") { //직접입력일때
+                                $("input[name='email_2']").val('');  //이메일 도메인입력박스 초기화.
+                                $("input[name='email_2']").attr('readonly', false); //직접입력 가능하도록 readonly막기
+                            }
+                        else {
+                            $("input[name='email_2']").val(email_3); //이메일 도메인 입력박스에 선택된 호스트등록.
+                            $("input[name='email_2']").attr('readonly', true); //readonly로 직접입력 막기.
+                        }
+                    });
+                });
+                </script>
+
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="container">
+                <div class="ft-left">
+                    <a href="index.html"><img src="img/ft-logo.png" alt="logo"></a>
+                </div>
+                <div class="ft-right">
+                    <div class="mb-list">
+                        <ul>
+                            <li><a href="login.html"><img src="img/ico-ft-login.png" alt=""> 로그인</a></li>
+                            <li><a href="notice.html"><img src="img/ico-ft-cs.png" alt="">고객센터</a></li>
+                            <li><a href="preference.html"><img src="img/ico-ft-my.png" alt="">마이홈</a></li>
+                        </ul>
+                    </div>
+                    <ul>
+                        <li><a href="">회사소개</a></li>
+                        <li><a href="">이용약관</a></li>
+                        <li><a href="" class="blue">개인정보처리방침</a></li>
+                        <li><a href="" class="mb">청소년 보호정책</a></li>
+                        <li><a href="">연재문의</a></li>
+                    </ul>
+
+                    <p>인천시 계양구 경명대로 1071, 503호. 에프엠미디어<br>
+                    사업자 등록번호: 191-6900206<br>
+                    대표자: 장경일 개인정보책임자: 장경일<br>
+                    </p>
+                    <i>Copyright © Upbook, All Rights Reserved.</i>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>

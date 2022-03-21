@@ -1,0 +1,523 @@
+@charset "utf-8";
+
+.insu_img{opacity:0.1}
+.qt_icon{margin-top:20px}
+@media all and (min-width:1201px) {
+/*food maker*/
+#s_contents{position:relative; width:100%; margin-top:3%} 
+.store_wrap{position:relative; width:70%; left:15%;margin-top:2.5%;}
+.store_wrap .store{position:relative; width:100%;}
+.store_wrap .store>ul{overflow:hidden; position:relative; padding-top:20px}
+.store_wrap .store>ul>li{float:left; margin-left:5%; width:26.66%; border:1px solid #EEE; margin-bottom:4%; }
+.store_wrap .store>ul>li:hover{border:1px solid #B9BED3}
+.store_wrap .store>ul>li>a>img{width:100%}
+.store_wrap .store>ul>li>a>p{text-align:center; font-weight:bold; font-size:23px}
+.store_wrap .store>ul>li:hover>a>p{color:#000}
+
+
+/*store1*/
+#food_store_wrap{position:relative; width:100%; margin-top:20px; margin-bottom:75px;}
+.food_store{position:relative; width:60%; left:20%; overflow:hidden;}
+.food_store>div{float:left; width:48%;}
+.store_left>img{width:100%;}
+.food_store .store_right{margin-left:4%; margin-top:3%}
+.food_store .store_right .store_name{border-bottom:2px solid #555; padding-bottom:30px}
+.food_store .store_right .store_name h2{font-size:30px; padding:10px 0px; }
+.food_store .store_right .store_name p{color:#5C5C5C; font-size:16px;}
+.store_right .store_text{margin-top:50px;}
+.store_text>ul>li{width:100%; margin-bottom:20px;}
+.store_text>ul>li>.text_tiitle{width:19%}
+.store_text>ul>li{overflow:hidden}
+.store_text>ul>li>div{float:left}
+
+
+#food_intro_wrap{position:relative; width:1200px; margin:0 auto;  border-top:1px solid #AAA; margin-bottom:80px }
+#food_intro_wrap h2{width:250px; margin:50px auto; }
+#food_intro_wrap h2>img{width:100%}
+.store_text{position:relative; width:1200px; margin:0 auto}
+.store_text p{font-size:18px; line-height:28.8px; text-align:center}
+
+.best_food{position:relative; width:100%; margin:80px auto}
+.best_food .best{font-size:25px; font-weight:bold}
+.best_food>ul{overflow:hidden}
+.best_food>ul>li{float:left; width:32%; margin-left:2%;}
+.best_food>ul>li>img{width:100%}
+.best_food>ul>li:first-child{margin-left:0}
+.best_food>ul>li p{font-size:18px; text-align:center; }
+.store_img{position:relative; width:1200px; margin:0 auto}
+.store_img>.video{width:100%}
+.menu{margin-bottom:50px}
+
+
+/*event*/
+#img_wrap{position:relative; width:100%; margin-top:80px}
+.event_date{position:relative; width:50%; margin-left:10%; margin-top:50px}
+.event_date>ul{overflow:hidden}
+.event_date>ul>li{float:left; width:33.33%; border:1px solid #EEE; font-size:20px; line-height:50px; text-align:center; cursor:pointer}
+.event_select{background-color:#AAA; color:#FFF}
+.event_list{position:relative; width:80%; margin-left:10%; margin-top:30px}
+.event_list>ul{overflow:hidden}
+.event_list>ul>li{float:left; width:30%; margin-left:5%; }
+.event_list>ul>li:first-child{margin-left:0}
+.event_list>ul>li>img{width:100%}
+.event_list>ul>li p{font-size:16px; text-align:center; line-height:50px; font-weight:bold}
+.event_list2{position:relative; width:80%; margin-left:10%; margin-top:30px; display:none}
+.event_list2>ul{overflow:hidden}
+.event_list2>ul>li{float:left; width:30%; margin-left:5%}
+.event_list2>ul>li:first-child{margin-left:0}
+.event_list2>ul>li>img{width:100%;}
+.event_list2>ul>li p{font-size:16px; text-align:center; line-height:50px; font-weight:bold}
+.event_list3{position:relative; width:80%; margin-left:10%; margin-top:30px; display:none}
+.event_list3>ul{overflow:hidden}
+.event_list3>ul>li{float:left; width:30%; margin-left:5%}
+.event_list3>ul>li:first-child{margin-left:0}
+.event_list3>ul>li>img{width:100%;}
+.event_list3>ul>li p{font-size:16px; text-align:center; line-height:50px; font-weight:bold}
+
+/*이벤트 상세*/
+#event_wrap{position:relativel; width:1200px; margin:0 auto}
+.event_img{position:relative; width:595px; margin:0 auto; margin-bottom:80px}
+.event_img>img{width:100%}
+
+/*delivery*/
+.delivery{position:absolute; width:595px; margin-left:-297.5px; left:50%; height:115px; margin-bottom:175px; bottom:50px}
+.delivery p{ width:80%; margin-left:10%; height:40px; border-radius:20px}
+
+/*modal*/
+.modal1{position:absolute; width:500px; top:180px; left:70px; z-index:999;}
+.modal1 .close_btn{position:absolute; right:0; top:0; cursor:pointer; width:45px;}
+.modal1 .close_btn>img{width:100%}
+.modal1>img{width:100%}
+}
+
+@media all and (min-width:801px) and (max-width:1200px) {
+/*food maker*/
+#s_contents{position:relative; width:100%; margin-top:3%} 
+.store_wrap{position:relative; width:80%; left:10%;margin-top:2.5%;}
+.store_wrap .store{position:relative; width:100%; }
+.store_wrap .store>ul{overflow:hidden; position:relative; padding-top:20px}
+.store_wrap .store>ul>li{float:left; margin-left:4%; width:28%; border:1px solid #EEE; margin-bottom:4%; }
+.store_wrap .store>ul>li:hover{border:1px solid #B9BED3}
+.store_wrap .store>ul>li>a>img{width:100%}
+.store_wrap .store>ul>li>a>p{text-align:center; font-weight:bold; font-size:23px}
+.store_wrap .store>ul>li:hover>a>p{color:#000}
+
+/*store*/
+#food_store_wrap{position:relative; width:100%; margin-top:20px; margin-bottom:75px}
+.food_store{position:relative; width:60%; left:20%; overflow:hidden;}
+.food_store>div{float:left; width:48%;}
+.store_left>img{width:100%;}
+.food_store .store_right{margin-left:4%;}
+.food_store .store_right .store_name{border-bottom:3px solid #555; padding-bottom:20px}
+.food_store .store_right .store_name h2{font-size:25px; padding:10px 0px; }
+.food_store .store_right .store_name p{color:#5C5C5C; font-size:14px;}
+.store_right .store_text{margin-top:25px;}
+.store_text>ul>li{width:100%; margin-bottom:10px;}
+.store_text>ul>li>.text_tiitle{width:10%}
+.store_text>ul>li{overflow:hidden}
+.store_text>ul>li>div{float:left}
+
+#food_intro_wrap{position:relative; width:800px; margin:0 auto;  border-top:1px solid #AAA; margin-bottom:80px }
+#food_intro_wrap h2{width:250px; margin:50px auto; }
+#food_intro_wrap h2>img{width:100%}
+.store_text{position:relative; width:800px; margin:0 auto}
+.store_text p{font-size:18px; line-height:28.8px; text-align:center}
+
+.best_food{position:relative; width:100%; margin:80px auto}
+.best_food .best{font-size:20px; font-weight:bold}
+.best_food>ul{overflow:hidden}
+.best_food>ul>li{float:left; width:32%; margin-left:2%;}
+.best_food>ul>li>img{width:100%}
+.best_food>ul>li:first-child{margin-left:0}
+.best_food>ul>li p{font-size:16px; text-align:center; }
+.store_img{width:90%; margin-left:5%; height:100%}
+.menu{margin-bottom:50px}
+
+/*event*/
+#img_wrap{position:relative; width:100%; margin-top:80px}
+.event_date{position:relative; width:80%; margin-left:10%; margin-top:50px}
+.event_date>ul{overflow:hidden}
+.event_date>ul>li{float:left; width:33.33%; border:1px solid #EEE; font-size:20px; line-height:50px; text-align:center; cursor:pointer}
+.event_select{background-color:#AAA; color:#FFF}
+.event_list{position:relative; width:80%; margin-left:10%; margin-top:30px}
+.event_list>ul{overflow:hidden}
+.event_list>ul>li{float:left; width:45%; margin-left:5%;}
+.event_list>ul>li:first-child{margin-left:0}
+.event_list>ul>li>img{width:100%}
+.event_list>ul>li p{font-size:16px; text-align:center; line-height:50px; font-weight:bold}
+.event_list2{position:relative; width:80%; margin-left:10%; margin-top:30px;  display:none}
+.event_list2>ul{overflow:hidden}
+.event_list2>ul>li{float:left; width:45%; margin-left:5%}
+.event_list2>ul>li:first-child{margin-left:0}
+.event_list2>ul>li>img{width:100%; opacity:0}
+.event_list3{position:relative; width:80%; margin-left:10%; margin-top:30px; display:none}
+.event_list3>ul{overflow:hidden}
+.event_list3>ul>li{float:left; width:45%; margin-left:5%}
+.event_list3>ul>li:first-child{margin-left:0}
+.event_list3>ul>li>img{width:100%;}
+.event_list3>ul>li p{font-size:16px; text-align:center; line-height:50px; font-weight:bold}
+
+/*이벤트 상세*/
+#event_wrap{position:relativel; width:100%; margin:0 auto}
+.event_img{position:relative; width:50%; margin-left:25%; margin-bottom:80px}
+.event_img>img{width:100%}
+
+/*modal*/
+.modal1{position:absolute; width:400px; height:270px; top:100px; left:20px; z-index:9999; background-color:#FFF}
+.modal1 .close_btn{position:absolute; right:0; top:0; cursor:pointer; width:30px}
+.modal1 .close_btn>img{width:100%}
+.modal1>img{padding:10px; width:100%}
+
+/*delivery*/
+.delivery{position:absolute; width:595px; margin-left:-297.5px; left:50%; height:115px; margin-bottom:175px; bottom:50px}
+.delivery p{ width:80%; margin-left:10%; height:40px; border-radius:20px;}
+
+}
+
+@media all and (min-width:601px) and (max-width:800px) {
+/*food maker*/	
+#s_contents{position:relative; width:100%; margin-top:3%} 
+.store_wrap{position:relative; width:80%; left:10%;margin-top:2.5%;}
+.store_wrap .store{position:relative; width:100%; }
+.store_wrap .store>ul{overflow:hidden; position:relative; padding-top:20px}
+.store_wrap .store>ul>li{float:left; margin-left:4%; width:44%; border:1px solid #EEE; margin-bottom:4%; }
+.store_wrap .store>ul>li:hover{border:1px solid #B9BED3}
+.store_wrap .store>ul>li>a>img{width:100%}
+.store_wrap .store>ul>li>a>p{text-align:center; font-weight:bold; font-size:20px}
+.store_wrap .store>ul>li:hover>a>p{color:#000}
+
+/*store*/
+#food_store_wrap{position:relative; width:100%; margin-top:20px; margin-bottom:75px}
+.food_store{position:relative; width:80%; left:10%; overflow:hidden;}
+.food_store>div{ width:100%;}
+.store_left>img{width:100%;}
+.food_store .store_right{margin-left:4%; margin-top:3%}
+.food_store .store_right .store_name{border-bottom:3px solid #555; padding-bottom:30px}
+.food_store .store_right .store_name h2{font-size:30px; padding:10px 0px; }
+.food_store .store_right .store_name p{color:#5C5C5C; font-size:16px;}
+.store_right .store_text{margin-top:50px;}
+.store_text>ul>li{width:100%; margin-bottom:20px;}
+.store_text>ul>li>.text_tiitle{width:25%}
+.store_text>ul>li{overflow:hidden}
+.store_text>ul>li>div{float:left}
+
+
+#food_intro_wrap{position:relative; width:90%; margin-left:5%;  border-top:1px solid #AAA; margin-bottom:80px }
+#food_intro_wrap h2{width:250px; margin:50px auto; }
+#food_intro_wrap h2>img{width:100%}
+.store_text{position:relative; width:100%; margin:0 auto}
+.store_text p{font-size:16px; line-height:28.8px; text-align:center}
+
+.best_food{position:relative; width:100%; margin:80px auto}
+.best_food .best{font-size:20px; font-weight:bold; text-align:center}
+.best_food>ul>li{width:80%; margin-left:10%;}
+.best_food>ul>li>img{width:100%}
+.best_food>ul>li p{font-size:16px; text-align:center; }
+.store_img{width:90%; margin-left:5%}
+.menu{margin-bottom:50px}
+
+/*event*/
+#img_wrap{position:relative; width:100%; margin-top:80px}
+.event_date{position:relative; width:80%; margin-left:10%; margin-top:50px}
+.event_date>ul{overflow:hidden}
+.event_date>ul>li{float:left; width:33.33%; border:1px solid #EEE; font-size:20px; line-height:50px; text-align:center; cursor:pointer}
+.event_select{background-color:#AAA; color:#FFF}
+.event_list{position:relative; width:80%; margin-left:10%; margin-top:30px}
+.event_list>ul>li{width:45%; margin-left:5%;}
+.event_list>ul>li:first-child{margin-left:0}
+.event_list>ul>li>img{width:100%}
+.event_list>ul>li p{font-size:16px; text-align:center; line-height:50px; font-weight:bold}
+.event_list2{position:relative; width:80%; margin-left:10%; margin-top:30px;  display:none}
+.event_list2>ul{overflow:hidden}
+.event_list2>ul>li{float:left; width:45%; margin-left:5%}
+.event_list2>ul>li:first-child{margin-left:0}
+.event_list2>ul>li>img{width:100%; opacity:0}
+.event_list3{position:relative; width:80%; margin-left:10%; margin-top:30px; display:none}
+.event_list3>ul{overflow:hidden}
+.event_list3>ul>li{float:left; width:45%; margin-left:5%}
+.event_list3>ul>li:first-child{margin-left:0}
+.event_list3>ul>li>img{width:100%;}
+.event_list3>ul>li p{font-size:16px; text-align:center; line-height:50px; font-weight:bold}
+
+/*이벤트 상세*/
+#event_wrap{position:relativel; width:100%; margin:0 auto}
+.event_img{position:relative; width:80%; margin-left:10%; margin-bottom:80px}
+.event_img>img{width:100%}
+
+/*modal*/
+.modal1{position:absolute; width:90%;  top:100px; left:5%; z-index:999; background-color:#FFF}
+.modal1 .close_btn{position:absolute; right:0; top:0; cursor:pointer; width:30px}
+.modal1 .close_btn>img{width:100%}
+.modal1>img{padding:10px; width:100%}
+
+/*delivery*/
+.delivery{position:absolute; width:595px; margin-left:-297.5px; left:50%; height:115px; margin-bottom:175px; bottom:50px}
+.delivery p{ width:80%; margin-left:10%; height:40px; border-radius:20px;}
+}
+
+@media all and (max-width:600px) {
+/*food maker*/	
+#s_contents{position:relative; width:100%; margin-top:3%} 
+.store_wrap{position:relative; width:80%; left:10%;margin-top:2.5%;}
+.store_wrap .store{position:relative; width:100%; }
+.store_wrap .store>ul{overflow:hidden; position:relative; padding-top:20px}
+.store_wrap .store>ul>li{float:left; margin-left:4%; width:92%; border:1px solid #EEE; margin-bottom:4%; }
+.store_wrap .store>ul>li:hover{border:1px solid #B9BED3}
+.store_wrap .store>ul>li>a>img{width:100%}
+.store_wrap .store>ul>li>a>p{text-align:center; font-weight:bold; font-size:20px}
+.store_wrap .store>ul>li:hover>a>p{color:#000}
+
+/*store*/
+#food_store_wrap{position:relative; width:100%; margin-top:20px; margin-bottom:75px}
+.food_store{position:relative; width:80%; left:10%; overflow:hidden;}
+.food_store>div{width:100%;}
+.store_left>img{width:100%;}
+.food_store .store_right{margin-left:4%; margin-top:3%}
+.food_store .store_right .store_name{border-bottom:3px solid #555; padding-bottom:30px}
+.food_store .store_right .store_name h2{font-size:30px; padding:10px 0px; }
+.food_store .store_right .store_name p{color:#5C5C5C; font-size:16px;}
+.store_right .store_text{margin-top:50px;}
+.store_text>ul>li{width:100%; margin-bottom:20px;}
+.store_text>ul>li>.text_tiitle{width:25%}
+.store_text>ul>li{overflow:hidden}
+.store_text>ul>li>div{float:left}
+
+#food_intro_wrap{position:relative; width:80%; margin-left:10%;  border-top:1px solid #AAA; margin-bottom:80px }
+#food_intro_wrap h2{width:250px; margin:50px auto; }
+#food_intro_wrap h2>img{width:100%}
+.store_text{position:relative; width:100%; margin:0 auto}
+.store_text p{font-size:16px; line-height:28.8px; text-align:center}
+
+.best_food{position:relative; width:100%; margin:80px auto}
+.best_food .best{font-size:20px; font-weight:bold; text-align:center}
+.best_food>ul>li{width:80%; margin-left:10%;}
+.best_food>ul>li>img{width:100%}
+.best_food>ul>li p{font-size:16px; text-align:center; }
+.store_img{width:90%; margin-left:5%}
+.menu{margin-bottom:50px}
+
+/*event*/
+#img_wrap{position:relative; width:100%; margin-top:80px}
+.event_date{position:relative; width:90%;  margin-top:50px; margin-left:5%}
+.event_date>ul{overflow:hidden}
+.event_date>ul>li{float:left; width:33.33%; border:1px solid #EEE; font-size:20px; line-height:50px; text-align:center; cursor:pointer}
+.event_select{background-color:#AAA; color:#FFF}
+.event_list{position:relative; width:80%; margin-left:10%;  margin-top:30px}
+.event_list>ul>li{width:100%}
+.event_list>ul>li>img{width:100%}
+.event_list>ul>li p{font-size:20px; text-align:center; line-height:50px; font-weight:bold; margin-top:20px}
+.event_list2{position:relative; width:80%; margin-left:10%; margin-top:30px;  display:none}
+.event_list2>ul{overflow:hidden}
+.event_list2>ul>li{float:left; width:100%}
+.event_list2>ul>li:first-child{margin-left:0}
+.event_list2>ul>li>img{width:100%; opacity:0}
+.event_list2 p{font-size:20px; text-align:center; line-height:50px; font-weight:bold; margin-top:20px}
+.event_list3{position:relative; width:80%; margin-left:10%; margin-top:30px; display:none}
+.event_list3>ul{overflow:hidden}
+.event_list3>ul>li{float:left; width:100%}
+.event_list3>ul>li:first-child{margin-left:0}
+.event_list3>ul>li>img{width:100%;}
+.event_list3>ul>li p{font-size:20px; text-align:center; line-height:50px; font-weight:bold; margin-top:20px}
+
+/*이벤트 상세*/
+#event_wrap{position:relativel; width:100%; margin:0 auto; }
+.event_img{position:relative; width:90%; margin-left:5%; margin-bottom:80px}
+.event_img>img{width:100%}
+
+/*modal*/
+.modal1{position:absolute; width:30%; top:100px; left:50px; z-index:999;}
+.modal1 .close_btn{position:absolute; right:0; top:-5px; cursor:pointer; width:15px;}
+.modal1 .close_btn>img{width:100%}
+.modal1>img{width:100%}
+
+/*dlivery*/
+
+.delivery{position:absolute; width:400px; height:90px; left:50%; margin-left:-200px; margin-bottom:100px; bottom:40px;}
+.delivery p{ width:80%; margin-left:10%; height:20px; border-radius:10px;}
+
+}
+
+@media all and (min-width:1201px) {
+/*about-us*/
+.over_box, .support_box, .studio_box, .head_box{position:absolute; width:100%; height:100%; background-color:rgba(0,0,0,0.5); left:0; z-index:999; display:none }
+.over_box .over_text, .support_box .over_text, .studio_box .over_text, .head_box .over_text{position:absolute; width:80%; height:500px; top:10%; left:10%; background-color:#FFF}
+.over_box .over_text h3, .support_box .over_text h3, .studio_box .over_text h3, .head_box .over_text h3{text-align:center; font-size:40px; margin-top:100px; line-height:40px}
+.over_box .over_text h3 span, .support_box .over_text h3 span, .studio_box .over_text h3 span, .head_box .over_text h3 span{color:#AAA; font-size:18px;}
+.over_box .over_text p, .support_box .over_text p, .studio_box .over_text p, .head_box .over_text p{padding:10px; text-align:center; font-size:20px; position:absolute;  width:80%; left:10%}
+.close{margin:20px}
+.media_box_m, .st_box_m, .sup_box_m, .head_box_m, .text_box_m{display:none}
+
+.kitchen_wrap{position:relative; width:100%; margin-top:80px}
+.kitchen1, .kitchen2{position:relative; overflow:hidden; width:70%; left:15%; height:400px; margin-bottom:80px}
+.kitchen1>div, .kitchen2>div{float:left}
+.kitchen1 .ki_img{width:45%}
+.kitchen1 .ki_text{width:35%; margin-left:5%;}
+.kitchen1 .ki_text h4{font-size:25px}
+.kitchen2 .ki_img{width:45%; position:absolute; right:0}
+.kitchen2 .ki_text{width:35%; margin-left:15%; position:relative; }
+.kitchen2 .ki_text h4{font-size:25px; text-align:right}
+.kitchen2 .ki_text p{text-align:right}
+.ki_text span{font-weight:bold; font-size:18px; margin-top:10px}
+.kitchen1 .ki_btn>a{display:block; border:1px solid #000; width:130px; text-align:center; line-height:40px; font-size:16px; font-weight:bold; margin-top:20px}
+.kitchen1 .ki_btn>a:hover{color:#FFF; background-color:#000}
+.kitchen2 .ki_btn>a{display:block; border:1px solid #000; width:130px; text-align:center; line-height:40px; font-size:16px; font-weight:bold; margin-top:20px; position:absolute; right:0}
+.kitchen2 .ki_btn>a:hover{color:#FFF; background-color:#000}
+}
+
+@media all and (min-width:801px) and (max-width:1200px) {
+/*about-us*/
+.over_box, .support_box, .studio_box, .head_box{position:absolute; width:100%; height:100%; background-color:rgba(0,0,0,0.5); left:0; z-index:999; display:none}
+.over_box .over_text, .support_box .over_text, .studio_box .over_text, .head_box .over_text{position:absolute; width:80%; height:500px; top:10%; left:10%; background-color:#FFF}
+.over_box .over_text h3, .support_box .over_text h3, .studio_box .over_text h3, .head_box .over_text h3{text-align:center; font-size:40px; margin-top:100px; line-height:40px}
+.over_box .over_text h3 span, .support_box .over_text h3 span, .studio_box .over_text h3 span, .head_box .over_text h3 span{color:#AAA; font-size:18px;}
+.over_box .over_text p, .support_box .over_text p, .studio_box .over_text p, .head_box .over_text p{padding:10px; text-align:center; font-size:18px; position:absolute;  width:80%; left:10%}
+.close{margin:20px}
+.media_box_m, .st_box_m, .sup_box_m, .head_box_m, .text_box_m{display:none}
+
+.kitchen_wrap{position:relative; width:100%; margin-top:80px}
+.kitchen1, .kitchen2{position:relative; overflow:hidden; width:95%; left:2.5%; height:400px; margin-bottom:80px}
+.kitchen1>div, .kitchen2>div{float:left}
+.kitchen1 .ki_img{width:45%}
+.kitchen1 .ki_text{width:50%; margin-left:5%;}
+.kitchen1 .ki_text h4{font-size:20px}
+.kitchen1 .ki_text p{font-size:14px}
+.kitchen2 .ki_img{width:45%; position:absolute; right:0}
+.kitchen2 .ki_text{width:50%; margin-right:5%; position:relative}
+.kitchen2 .ki_text h4{font-size:20px; text-align:right}
+.kitchen2 .ki_text p{text-align:right; font-size:14px}
+.ki_text span{font-weight:bold; font-size:16px; margin-top:10px}
+.kitchen1 .ki_btn>a{display:block; border:1px solid #000; width:130px; text-align:center; line-height:40px; font-size:16px; font-weight:bold; margin-top:20px}
+.kitchen1 .ki_btn>a:hover{color:#FFF; background-color:#000}
+.kitchen2 .ki_btn>a{display:block; border:1px solid #000; width:130px; text-align:center; line-height:40px; font-size:16px; font-weight:bold; margin-top:20px; position:absolute; right:0}
+.kitchen2 .ki_btn>a:hover{color:#FFF; background-color:#000}
+}
+@media all and (min-width:601px) and (max-width:800px) {
+/*about-us*/
+.over_box, .support_box, .studio_box, .head_box{position:absolute; width:100%; height:100%; background-color:rgba(0,0,0,0.5); left:0; z-index:999; display:none}
+.over_box .over_text, .support_box .over_text, .studio_box .over_text, .head_box .over_text{position:absolute; width:80%; height:500px; top:10%; left:10%; background-color:#FFF}
+.over_box .over_text h3, .support_box .over_text h3, .studio_box .over_text h3, .head_box .over_text h3{text-align:center; font-size:40px; margin-top:100px; line-height:40px}
+.over_box .over_text h3 span, .support_box .over_text h3 span, .studio_box .over_text h3 span, .head_box .over_text h3 span{color:#AAA; font-size:18px;}
+.over_box .over_text p, .support_box .over_text p, .studio_box .over_text p, .head_box .over_text p{padding:10px; text-align:center; font-size:15px; position:absolute;; width:80%; left:10%}
+.close{margin:20px}
+.media_box_m, .st_box_m, .sup_box_m, .head_box_m, .text_box_m{display:none}
+
+.kitchen_wrap{position:relative; width:100%; margin-top:80px}
+.kitchen1, .kitchen2{position:relative; width:95%; left:2.5%;  margin-bottom:80px}
+.kitchen1 .ki_img{width:90%; margin-left:5%}
+.kitchen1 .ki_text{width:90%; margin-left:5%; margin-top:10px}
+.kitchen1 .ki_text h4{font-size:25px}
+.kitchen1 .ki_text p{font-size:14px}
+.kitchen2 .ki_img{width:90%; margin-left:5%}
+.kitchen2 .ki_text{width:90%; margin-left:5%; margin-top:10px}
+.kitchen2 .ki_text h4{font-size:25px;}
+.kitchen2 .ki_text p{ font-size:14px}
+.ki_text span{font-weight:bold; font-size:16px; margin-top:10px}
+.kitchen1 .ki_btn>a{display:block; border:1px solid #000; width:130px; text-align:center; line-height:40px; font-size:16px; font-weight:bold; margin-top:20px}
+.kitchen1 .ki_btn>a:hover{color:#FFF; background-color:#000}
+.kitchen2 .ki_btn>a{display:block; border:1px solid #000; width:130px; text-align:center; line-height:40px; font-size:16px; font-weight:bold; margin-top:20px;}
+.kitchen2 .ki_btn>a:hover{color:#FFF; background-color:#000}
+	
+}
+@media all and (max-width:600px) {
+/*about-us*/
+.over_box, .support_box, .studio_box, .head_box{position:absolute; width:100%; height:100%; background-color:rgba(0,0,0,0.5); left:0; z-index:999; display:none }
+.over_box .over_text, .support_box .over_text, .studio_box .over_text, .head_box .over_text{position:absolute; width:80%; height:500px; top:10%; left:10%; background-color:#FFF}
+.over_box .over_text h3, .support_box .over_text h3, .studio_box .over_text h3, .head_box .over_text h3{text-align:center; font-size:40px; margin-top:100px; line-height:40px}
+.over_box .over_text h3 span, .support_box .over_text h3 span, .studio_box .over_text h3 span, .head_box .over_text h3 span{color:#AAA; font-size:18px;}
+.over_box .over_text p, .support_box .over_text p, .studio_box .over_text p, .head_box .over_text p{padding:10px; text-align:center; font-size:15px; position:absolute; width:80%; left:10%}
+.close{margin:20px}
+.close_s, .close_st, .close_h{position:absolute; right:20px; top:20px}
+
+.media_box_m, .st_box_m, .sup_box_m, .head_box_m{position:absolute; width:100%; top:0; height:100%; background-color:rgba(0,0,0,0.5); left:0; z-index:999; display:none }
+.media_box_m .over_text, .st_box_m .over_text, .sup_box_m .over_text, .head_box_m .over_text{background-color:#FFF; position:absolute; width:90%; left:5%; height:90%; top:5%}
+.media_box_m h3, .st_box_m h3, .sup_box_m h3, .head_box_m h3{text-align:center; font-size:30px; margin-top:100px; line-height:40px}
+.media_box_m h3 span, .st_box_m h3 span, .sup_box_m h3 span, .head_box_m h3 span{color:#AAA; font-size:18px;}
+.media_box_m p, .st_box_m p, .sup_box_m p, .head_box_m p{padding:10px; text-align:center; font-size:13px; position:absolute;  width:80%; left:10%}
+.text_box{display:none}
+
+.kitchen_wrap{position:relative; width:100%; margin-top:80px}
+.kitchen1, .kitchen2{position:relative; width:95%; left:2.5%;  margin-bottom:80px}
+.kitchen1 .ki_img{width:90%; margin-left:5%}
+.kitchen1 .ki_text{width:90%; margin-left:5%; margin-top:10px}
+.kitchen1 .ki_text h4{font-size:25px}
+.kitchen1 .ki_text p{font-size:14px}
+.kitchen2 .ki_img{width:90%; margin-left:5%}
+.kitchen2 .ki_text{width:90%; margin-left:5%; margin-top:10px}
+.kitchen2 .ki_text h4{font-size:25px;}
+.kitchen2 .ki_text p{ font-size:14px}
+.ki_text span{font-weight:bold; font-size:16px; margin-top:10px}
+.kitchen1 .ki_btn>a{display:block; border:1px solid #000; width:130px; text-align:center; line-height:40px; font-size:16px; font-weight:bold; margin-top:20px}
+.kitchen1 .ki_btn>a:hover{color:#FFF; background-color:#000}
+.kitchen2 .ki_btn>a{display:block; border:1px solid #000; width:130px; text-align:center; line-height:40px; font-size:16px; font-weight:bold; margin-top:20px;}
+.kitchen2 .ki_btn>a:hover{color:#FFF; background-color:#000}
+}
+/*about-us end*/
+
+
+/*contact*/
+@media all and (min-width:1201px) {
+#content .contact_wrap{position:relative; overflow:hidden; width:1200px; margin:50px auto;}
+#content .contact_wrap h3{font-size:23px; color:#222; font-weight:bold; margin-bottom:40px}
+#content .contact_wrap p{font-size:14px; color:#777; margin-bottom:15px}
+#content .send_msg{width:49%; float:left}
+#content .send_msg label{display:block; font-size:14px; color:#777; margin-top:20px; margin-bottom:10px}
+#content .send_msg input.input_text/*=input[type=text]*/{width:100%; font-size:13px; color:#545454; border:1px solid #d3d3d3; background-color:#FFF; margin:5px 0; padding:15px; box-sizing:border-box}
+#content .send_msg textarea{width:100%; font-size:13px; color:#545454; border:1px solid #d3d3d3; background-color:#FFF; margin:5px 0; padding:15px; box-sizing:border-box; line-height:1.5em; height:200px}
+#content .send_msg input[type=submit]{background-color:#afafaf; color:#FFF; font-size:11px; line-height:45px; height:45px; padding-left:23px; padding-right:23px; letter-spacing:2px; font-weight:bold; border:none; transition-duration:0.5s}
+#content .send_msg input[type=submit]:hover{background-color:#161616}
+#content .offices{width:49%; float:right}
+#content .offices address{line-height:28px; margin-bottom:40px}
+
+.location{position:relative; width:1200px; margin:0 auto; overflow:hidden}
+.location>div{float:left}
+.location .map{margin-left:50px}
+.location div>p{font-size:18px; font-weight:bold; text-align:center;margin:10px auto}
+}
+@media all and (min-width:801px) and (max-width:1200px) {
+#content .contact_wrap{position:relative; overflow:hidden; padding:20px}
+#content .contact_wrap h3{font-size:23px; color:#222; font-weight:bold; margin-bottom:40px}
+#content .contact_wrap p{font-size:14px; color:#777; margin-bottom:15px}
+#content .send_msg{width:49%; float:left}
+#content .send_msg label{display:block; font-size:14px; color:#777; margin-top:20px; margin-bottom:10px}
+#content .send_msg input.input_text/*=input[type=text]*/{width:100%; font-size:13px; color:#545454; border:1px solid #d3d3d3; background-color:#FFF; margin:5px 0; padding:15px; box-sizing:border-box}
+#content .send_msg textarea{width:100%; font-size:13px; color:#545454; border:1px solid #d3d3d3; background-color:#FFF; margin:5px 0; padding:15px; box-sizing:border-box; line-height:1.5em; height:200px}
+#content .send_msg input[type=submit]{background-color:#afafaf; color:#FFF; font-size:11px; line-height:45px; height:45px; padding-left:23px; padding-right:23px; letter-spacing:2px; font-weight:bold; border:none; transition-duration:0.5s}
+#content .send_msg input[type=submit]:hover{background-color:#161616}
+#content .offices{width:49%; float:right}
+#content .offices address{line-height:28px; margin-bottom:40px}
+.location{position:relative; width:100%;}
+.location>div{width:100%}
+.location div>p{font-size:18px; font-weight:bold; text-align:center; }
+}
+@media all and (min-width:601px) and (max-width:800px) {
+#content .contact_wrap{position:relative; padding:20px}
+#content .contact_wrap h3{font-size:23px; color:#222; font-weight:bold; margin-bottom:40px}
+#content .contact_wrap p{font-size:14px; color:#777; margin-bottom:15px}
+#content .send_msg{width:100%; margin-bottom:50px}
+#content .send_msg label{display:block; font-size:14px; color:#777; margin-top:20px; margin-bottom:10px}
+#content .send_msg input.input_text/*=input[type=text]*/{width:100%; font-size:13px; color:#545454; border:1px solid #d3d3d3; background-color:#FFF; margin:5px 0; padding:15px; box-sizing:border-box}
+#content .send_msg textarea{width:100%; font-size:13px; color:#545454; border:1px solid #d3d3d3; background-color:#FFF; margin:5px 0; padding:15px; box-sizing:border-box; line-height:1.5em; height:200px}
+#content .send_msg input[type=submit]{background-color:#afafaf; color:#FFF; font-size:11px; line-height:45px; height:45px; padding-left:23px; padding-right:23px; letter-spacing:2px; font-weight:bold; border:none; transition-duration:0.5s}
+#content .send_msg input[type=submit]:hover{background-color:#161616}
+#content .offices{width:100%;}
+#content .offices address{line-height:28px; margin-bottom:40px}
+.location{position:relative; width:100%; padding:20px}
+.location>div{width:100%;}
+.location div>p{font-size:18px; font-weight:bold; text-align:left}
+}
+@media all and (max-width:600px) {
+#content .contact_wrap{position:relative; padding:20px}
+#content .contact_wrap h3{font-size:23px; color:#222; font-weight:bold; margin-bottom:40px}
+#content .contact_wrap p{font-size:14px; color:#777; margin-bottom:15px}
+#content .send_msg{width:100%; margin-bottom:50px}
+#content .send_msg label{display:block; font-size:14px; color:#777; margin-top:20px; margin-bottom:10px}
+#content .send_msg input.input_text/*=input[type=text]*/{width:100%; font-size:13px; color:#545454; border:1px solid #d3d3d3; background-color:#FFF; margin:5px 0; padding:15px; box-sizing:border-box}
+#content .send_msg textarea{width:100%; font-size:13px; color:#545454; border:1px solid #d3d3d3; background-color:#FFF; margin:5px 0; padding:15px; box-sizing:border-box; line-height:1.5em; height:200px}
+#content .send_msg input[type=submit]{background-color:#afafaf; color:#FFF; font-size:11px; line-height:45px; height:45px; padding-left:23px; padding-right:23px; letter-spacing:2px; font-weight:bold; border:none; transition-duration:0.5s}
+#content .send_msg input[type=submit]:hover{background-color:#161616}
+#content .offices{width:100%;}
+#content .offices address{line-height:28px; margin-bottom:40px}
+.location{position:relative; width:100%; padding:20px}
+.location>div{}
+.location div>p{font-size:18px; font-weight:bold; text-align:left}
+}

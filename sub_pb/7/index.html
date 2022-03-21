@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta property="og:title" content="[ready]키오스크">
+    <meta property="og:url" content="http://">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="http://fibercorp.co.kr/landing/fiberco/type_4/img/ready-bg1.jpg">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="page">
+        <header>
+            <nav class="header-nav" role="navigation">
+                <div class="container">
+                    <div class="row">
+                        <div class="logo">
+                            <div id="main-logo"><a href="http://eis.fibercorp.co.kr/orderqueen/"><img src="img/top_logo.png" alt="kiosk"></a></div>
+                        </div>
+                        <div class="main-nav">
+                            <ul>
+                                <li class="active"><a href="#home" data-nav-section="home" class="scroll">Home</a></li>
+                                <li><a href="#about" data-nav-section="about" class="scroll">제품소개</a></li>
+                                <li><a href="#practice-areas" data-nav-section="practice-areas" class="scroll">경쟁력</a></li>
+                                <li><a href="#our-team" data-nav-section="our-team" class="scroll">설치사례</a></li>
+                                <li class="btn-cta"><a class="external" href="http://eis.fibercorp.co.kr/kiosk/" target="_blank"><span>구매문의<img src="img/question-circle.png" alt="물음표아이콘"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div id="home">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide"></div>
+                    <!--
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    -->
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    autoplay: {
+                        delay: 3000,
+                    },
+                });
+            </script>
+        </header>
+        <section id="about">
+                <div class="container">
+                    <div class="heading">
+                        <h2><img src="img/top_logo.png" alt="logo"></h2>
+                        <span class="sub-bar"></span>
+                        <p class="subtle-tex">product about</p>
+                    </div>
+                    <div class="section-box1">
+                        <div class="sectionProduct">
+                            <div class="se-proInner">
+                                <h2><span>제품</span>소개</h2>
+                                <p>매장 환경에 따라 다른, 매장 맞춤형 제품을 경험해 보세요</p>
+                                <div>
+                                    <div class="productBox" OnClick="window.open('http://eis.fibercorp.co.kr/kiosk/')">
+                                        <div class="productImg">
+                                            <img src="img/pro-img1.jpg" alt="제품 이미지">
+                                        </div>
+                                        <div class="productText">
+                                            <b>[오더퀸]<br>키오스크 22오더C</b>
+                                            <p><span>카드 전용</span> 1인매장, 카페, 패스트푸드에 잘 어울려요</p>
+                                            <i>월<strong>80,000</strong>원</i>
+                                        </div>
+                                    </div>
+                                    <div class="productBox" OnClick="window.open('http://eis.fibercorp.co.kr/kiosk/')">
+                                            <div class="productImg">
+                                                <img src="img/pro-img2.jpg" alt="제품 이미지">
+                                            </div>
+                                        <div class="productText">
+                                            <b>[오더퀸]<br>키오스크 22오더CM</b>
+                                            <p><span>현금/카드 겸용</span> 1인매장, 카페, 패스트푸드에 잘 어울려요</p>
+                                            <i>월<strong>130,000</strong>원</i>
+                                        </div>
+                                    </div>
+                                    <div class="productBox" OnClick="window.open('http://eis.fibercorp.co.kr/kiosk/')">
+                                        <div class="productImg">
+                                            <img src="img/pro-img3.jpg" alt="제품 이미지">
+                                         </div>
+                                            <div class="productText">
+                                            <b>[오더퀸]<br>키오스크 32오더C</b>
+                                            <p><span>카드 전용</span> 푸드코트, 多메뉴업소, 옵션추가 필요한 업소에 제격입니다</p>
+                                            <i>월<strong>140,000</strong>원</i>
+                                        </div>
+                                    </div>
+                                    <div class="productBox" OnClick="window.open('http://eis.fibercorp.co.kr/kiosk/')">
+                                        <div class="productImg">
+                                            <img src="img/pro-img4.jpg" alt="제품 이미지">
+                                         </div>
+                                        <div class="productText">
+                                            <b>[오더퀸]<br>키오스크 32오더CM</b>
+                                            <p><span>현금/카드 겸용</span> 푸드코트, 多메뉴업소, 옵션추가 필요한 업소에 제격입니다</p>
+                                            <i>월<strong>170,000</strong>원</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="practice-areas">
+                <div class="container">
+                    <div class="heading">
+                        <h2><img src="img/top_logo.png" alt="logo"></h2>
+                        <b>만의 차별화 된 경쟁력</b>
+                        <i>스마트 O2O 고객 서비스 기반 구현</i>
+                        <span class="sub-bar"></span>
+                        <p class="subtle-tex">competitive price</p>
+                    </div>
+                    <div class="section-box2">
+                        <div>
+                            <div class="practice-box">
+                                <div><img src="img/practice-img1.jpg"></div>
+                                <p>KIOSK</p>
+                                <i>무인 주문/결제</i>
+                            </div>
+                            <div class="practice-box">
+                                <div><img src="img/practice-img2.jpg"></div>
+                                <p>MOBILE</p>
+                                <i>모바일 주문/결제</i>
+                            </div>
+                            <div class="practice-box">
+                                <div><img src="img/practice-img3.jpg"></div>
+                                <p>고객 호출</p>
+                                <i>스마트 호출(DID,SMS)</i>
+                            </div>
+                            <div class="practice-box">
+                                <div><img src="img/practice-img4.jpg"></div>
+                                <p>출고 패드</p>
+                                <i>고객 주문정보, 호출</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="our-team">
+            <div class="container">
+                <div class="heading">
+                    <b>설치 대표사례</b>
+                    <i>매장에서 키오스크를 설치한 대표 사례를 소개합니다</i>
+                    <span class="sub-bar"></span>
+                </div>
+                <div class="autoplay">
+                    <div><img src="img/autoplay1.jpg" alt="버거킹 설치사례 이미지"></div>
+                    <div><img src="img/autoplay2.jpg" alt="타코벨 설치사례 이미지"></div>
+                    <div><img src="img/autoplay3.jpg" alt="현대백화점 쿠드코트 설치사례 이미지"></div>
+                    <div><img src="img/autoplay4.jpg" alt="IFC몰 쿠드코트 설치사례 이미지"></div>
+                    <div><img src="img/autoplay5.jpg" alt="아트몰링 쇼핑몰 푸드코트 설치사례 이미지"></div>
+                    <div><img src="img/autoplay6.jpg" alt="메이티엔 설치사례 이미지"></div>
+                    <div><img src="img/autoplay7.jpg" alt="콘레드 커피 설치사례 이미지"></div>
+                    <div><img src="img/autoplay8.jpg" alt="얌샘김밥 설치사례 이미지"></div>
+                    <div><img src="img/autoplay9.jpg" alt="매콤돈까스냉면 설치사례 이미지"></div>
+                    <div><img src="img/autoplay10.jpg" alt="커피에반하다"></div>
+                    <div><img src="img/autoplay11.jpg" alt="큰맘할매순대국 설치사례 이미지"></div>
+                    <div><img src="img/autoplay12.jpg" alt="동국대 버거매장 설치사례 이미지"></div>
+                    <div><img src="img/autoplay13.jpg" alt="DQ 데어이퀸 설치사례 이미지"></div>
+                    <div><img src="img/autoplay14.jpg" alt="미스사이공 설치사례 이미지"></div>
+                    <div><img src="img/autoplay15.jpg" alt="직화한상 설치사례 이미지"></div>
+                    <div><img src="img/autoplay16.jpg" alt=""></div>
+                    <div><img src="img/autoplay17.jpg" alt=""></div>
+                    <div><img src="img/autoplay18.jpg" alt=""></div>
+                    <div><img src="img/autoplay19.jpg" alt=""></div>
+                    <div><img src="img/autoplay20.jpg" alt=""></div>
+                </div>
+            </div>
+        </section>
+        <script>
+            $('.autoplay').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+        </script>
+        <div id="map_view">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3166.695086477821!2d127.12615311530875!3d37.467920579816436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357caf55abac5235%3A0x59c420a8b36e8b8!2z6rK96riw64-EIOyEseuCqOyLnCDsiJjsoJXqtawg67O17KCV64-ZIO2XjOumieuhnDg5MOuyiOq4uCAzNQ!5e0!3m2!1sko!2skr!4v1574411283952!5m2!1sko!2skr" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="footer-box">
+                    <div class="footerLogo">
+                        <img src="img/top_logo.png" alt="오더퀸 로고">
+                    </div>
+                    <div class="footerText">
+                        <ul>
+                            <li>사업자등록번호 : 810-87-01334</li>
+                            <li>(주)드림아이티솔루션</li>
+                            <li>대표이사 : 지우진</li>
+                            <li>주소 : 경기도 성남시 수정구 헌릉로890번길 35, 101호(복정동)</li>
+                            <li>대표전화 : 031-755-4838</li>
+                            <li>Fax : 031-624-5654</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <a href="http://fibercorp.co.kr/" target="_blank">Copyright © <span>FIBER</span> COMPANY Inc. All Rights Reserved.</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

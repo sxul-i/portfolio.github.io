@@ -1,0 +1,221 @@
+@charset utf-8;
+
+/* reset */
+* {margin: 0; padding: 0; list-style: none;}
+body{font: -apple-system-body;}
+@font-face { font-family: 'NIXGONM-Vb'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+img {
+    width: 100%;
+    height: auto;
+}
+.wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+header {
+    width: 100%; 
+    position: fixed;
+}
+nav {
+    font-family: 'NIXGONM-Vb';
+}
+nav ul {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+nav ul li{
+    flex: auto;
+}
+nav a {
+    padding: 7px 1rem;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    text-align: center; text-decoration: none;
+    font-size: 14px; font-weight: bold;
+    background: #000;
+    color: #fff;
+}
+
+/* ul > li:nth-child(1) > a {width: 130px;}
+ul > li:nth-child(2) > a {width: 232px;}
+ul > li:nth-child(3) > a {width: 168px;}
+ul > li:nth-child(4) > a {width: 150px;} */
+
+ul > li:nth-child(2) > a, ul > li:nth-child(4) > a {
+    background: #1f1f1f;
+}
+
+#marketing {padding-top: 50px;}
+#marketing,#viral,#insta,#facebook,#app,#web{
+    font-size: 0;
+}
+fieldset {
+    width: 260px;
+    border: none;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+fieldset::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.counsel, .counsel-bar {
+    background: #333333;
+}
+.counsel label {
+    display: block;
+    width: 55px; height: 21px;
+    line-height: 21px;
+    color: #fff;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 12px;
+    float: left;
+    margin-bottom: 8px;
+}
+.counsel input {
+    border: none;
+}
+.text {
+    width: 190px; height: 21px;
+    margin-bottom: 8px;
+    text-indent: 8px;
+    float: right;
+}
+.textBox {
+    width: 260px; height: 76px;
+    text-align: center;
+}
+.bt-counsel {
+    display: block;
+    width: 105px; height: 20px;
+    line-height: 20px;
+    background: #ee403e;
+    font-size: 11px;
+    color: #fff;
+    margin: 15px auto 20px;
+    cursor: pointer;
+}
+footer {
+    padding: 30px 0;
+    background: #191919;
+}
+footer a {
+    display: block;
+    text-align: center;
+    color: #a3a3a3;
+    font-size: 7px;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-bottom: 100px;
+}
+footer p {
+    text-align: center;
+    color: #a3a3a3;
+    font-size: 12px;
+    line-height: 18px;
+}
+footer span {
+    color: #ee403e;
+}
+.ft-nav {
+    position: fixed; bottom: 0;
+    width: 100%;
+    font-family: 'NIXGONM-Vb';
+    font-weight: bold;
+}
+.ft-nav ul {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+.ft-nav li {
+    float: auto;
+    width: 50%;
+    background: #333;
+}
+.ft-nav li:nth-child(2) {
+    background: #1f1f1f;
+}
+.ft-nav ul a {
+    display: block;
+    width: 140px;
+    text-decoration: none;
+    color: #fff;
+    padding: 25px 0;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    margin: 0 auto;
+}
+.ft-nav img {
+    width: 32px;
+    float: left;
+    margin-right: 15px;
+    margin-left: 3px;
+}
+.ft-nav::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+
+
+
+@media screen and (min-width: 680px) {
+
+    .wrap, nav, .ft-nav {
+        width: 681px;
+    }
+    nav a {
+        padding: 18px 1rem;
+        font-size: 25px;
+    }
+    img {
+        width: 100%;
+    }
+    #marketing {
+        padding-top: 76px;
+    }
+    .counsel {
+        max-width: 100%; height: 539px;
+    }
+    fieldset {
+        width: 480px;
+        padding-top: 40px;
+    }
+    .counsel label {
+        width: 110px; height: 35px;
+        line-height: 35px;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .counsel input {
+        border: none;
+    }
+    .text {
+        width: 370px; height: 35px;
+        margin-bottom: 15px;
+    }
+    .textBox {
+        width: 480px; height: 134px;
+    }
+    .bt-counsel {
+        width: 210px; height: 40px;
+        font-size: 20px;
+    }
+    .ft-nav ul a {
+        width: 200px;
+        line-height: 23px;
+        font-size: 19px;
+    }
+    .ft-nav img {
+        width: 45px;
+    }
+
+}

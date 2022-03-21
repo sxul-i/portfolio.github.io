@@ -1,0 +1,325 @@
+@charset utf-8;
+
+@font-face {
+    font-family: 'JejuGothic';
+    src: url('../font/JejuGothic-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {margin: 0; padding: 0; list-style: none;}
+img {
+    width: 100%;
+    height: auto;
+}
+.wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+header {
+    width: 100%; 
+    position: fixed;
+}
+.counsel {
+    position: relative;
+}
+.landing, .counsel-bar {
+    font-size: 0;
+}
+.jejugothic p {
+    width: 100%; height: 50px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'JejuGothic', sans-serif;
+    cursor: pointer;
+}
+.jejugothic p::after {
+    content: "+";
+    margin-left: 4px;
+}
+.jejugothic.minus p::after {
+    content: "-";
+    margin-left: 4px;
+}
+.hide {
+    display: none;
+}
+.landing.plus {
+    display: block;
+}
+.hide {
+    position: relative;
+}
+.btn-counsel {
+    position: absolute; top: 88%; left: 32%;
+    display: block;
+    width: 36%; height: 60px;
+    margin: 0 auto;
+    text-indent: -999px;
+}
+
+fieldset {
+    width: 100%;
+    border: none;
+    margin-bottom: 20px;
+}
+.counsel-inner {
+    width: 75%;
+    background: #fbfbfb;
+    border: 1px solid #dedede;
+    padding: 20px 40px;
+    margin: 0 auto;
+
+}
+.counsel-inner::after,
+.check-box::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.counsel {
+    width: 100%;
+    overflow: hidden;
+}
+.counsel img {
+    display: block;
+    width: 55%;
+    margin: 45px auto 20px auto;
+}
+.counsel-bg {
+    position: absolute; top: 0; left: 0;
+    z-index: -1;
+}
+.counsel label {
+    display: block;
+    width: 25%; height: 36px;
+    line-height: 32px;
+    font-size: 12px;
+    float: left;
+}
+.counsel label span {
+    color: #ff0000;
+}
+input[type="checkbox"] {
+    float: left; height: 33px;
+    margin: 5px 5px 0 0;
+}
+.counsel .radio-text {
+    width: 90%; height: 25px;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.radio-text a {
+    color: #000;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+.counsel input {
+    box-sizing: border-box;
+}
+.counsel select {
+    width: 65%; height: 28px;
+    margin-bottom: 8px;
+    margin-left: 10%;
+    font-size: 11px;
+    text-indent: 5px;
+}
+.text {
+    width: 65%; height: 28px;
+    margin-bottom: 8px;
+    text-indent: 8px;
+    float: right;
+    margin-left: 10%;
+    font-size: 11px;
+}
+.more {
+    width: 100%;
+    margin-top: 10px;
+}
+.more textarea {
+    width: 100%;
+    display: none;
+    padding-top: 10px;
+}
+.more textarea.active {display: block;}
+.check-box {
+    width: 125px;
+    margin: 0 auto;
+}
+.counsel .check {
+    width: auto;
+    margin-left: 8px;
+    float: left;
+}
+.counsel input.radio {
+    height: 31px;
+    float: left;
+    margin-left: 15px;
+}
+.textBox {
+    width: 260px; height: 76px;
+    text-align: center;
+}
+.bt-counsel {
+    display: block;
+    width: 160px; height: 40px;
+    line-height: 20px;
+    background: #2886c7;
+    font-size: 14px;
+    color: #fff;
+    margin: 25px auto;
+    cursor: pointer;
+    border: none;
+    font-family: 'JejuGothic', sans-serif;
+}
+.bt-text {
+    width: 100%;
+    background: #cedef0;
+}
+.bt-text p {
+    width: 85%;
+    text-align: center;
+    font-size: 12px;
+    line-height: 19px;
+    color: #464646;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.bt-text p span {
+    display: inline-block;
+    color: #fff;
+    background: #73859e;
+    margin-top: 5px;
+    padding: 0 2px;
+}
+footer {
+    padding: 10px 0;
+    background: #333;
+}
+footer a {
+    display: block;
+    text-align: center;
+    color: #a3a3a3;
+    font-size: 7px;
+    text-decoration: none;
+}
+footer p {
+    text-align: center;
+    color: #a3a3a3;
+    font-size: 12px;
+    line-height: 18px;
+}
+footer span {
+    color: #ee403e;
+}
+.ft-nav {
+    position: fixed; bottom: 0;
+    width: 100%;
+    font-family: 'NIXGONM-Vb';
+    font-weight: bold;
+}
+.ft-nav ul {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+.ft-nav li {
+    float: auto;
+    width: 50%;
+    background: #333;
+}
+.ft-nav li:nth-child(2) {
+    background: #1f1f1f;
+}
+.ft-nav ul a {
+    display: block;
+    width: 140px;
+    text-decoration: none;
+    color: #fff;
+    padding: 25px 0;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    margin: 0 auto;
+}
+.ft-nav img {
+    width: 32px;
+    float: left;
+    margin-right: 15px;
+    margin-left: 3px;
+}
+.ft-nav::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+
+@media screen and (min-width: 380px) {
+    .counsel label {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 450px) {
+    .counsel label {
+        font-size: 14px;
+    }
+    .text, .counsel select {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 680px) {
+
+    .wrap, nav, .ft-nav {
+        width: 681px;
+    }
+    img {
+        width: 100%;
+    }
+    .counsel {
+        max-width: 100%;
+    }
+    .counsel-inner {
+        padding: 35px 40px;
+    }
+    .counsel label {
+        width: 25%;
+        line-height: 40px;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .text {
+        width: 65%;
+        margin-left: 10%;
+        margin-bottom: 11px;
+    }
+    .bt-counsel {
+        width: 220px; height: 50px;
+        font-size: 20px;
+    }
+    .text, .counsel select {
+        font-size: 14px;
+        height: 40px;
+    }
+    .counsel select {
+        margin-bottom: 11px;
+    }
+    .counsel .radio-text {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    .check-box {
+        width: 160px;
+    }
+    .counsel input.radio {
+        height: 37px;
+    }
+    .bt-text p {
+        font-size: 14px;
+    }
+
+}

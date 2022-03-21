@@ -1,0 +1,116 @@
+@charset utf-8;
+
+/* reset */
+* {margin: 0; padding: 0; list-style: none;}
+@font-face { font-family: 'NIXGONM-Vb'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+
+
+
+
+.wrap {
+    width: 680px;
+    margin: 0 auto;
+}
+header {
+    width: 100%; 
+    position: fixed;
+}
+nav {
+    font-family: 'NIXGONM-Vb';
+}
+nav ul {
+    display: flex;
+}
+nav a {
+    height: 80px;
+    line-height: 80px;
+    display: block;
+    text-align: center; text-decoration: none;
+    font-size: 28px; font-weight: bold;
+    background: #000;
+    color: #fff;
+}
+ul > li:nth-child(1) > a {width: 130px;}
+ul > li:nth-child(2) > a {width: 232px;}
+ul > li:nth-child(3) > a {width: 168px;}
+ul > li:nth-child(4) > a {width: 150px;}
+ul > li:nth-child(2) > a, ul > li:nth-child(4) > a {
+    background: #1f1f1f;
+}
+/*
+#marketing {max-width: 100%; height: 583px; padding-top: 80px;}
+#viral {max-width: 100%; height: 1343px;}
+#insta {max-width: 100%; height: 1314px;}
+#facebook {max-width: 100%; height: 1515px;}
+#app {max-width: 100%; height: 1455px;}
+#web {max-width: 100%; height: 1879px;}
+*/
+#marketing,#viral,#insta,#facebook,#app,#web{
+    font-size: 0;
+}
+.counsel {
+    max-width: 100%; height: 539px;
+    background: url(../img/ready-bg7.jpg) no-repeat center/cover;
+}
+fieldset {
+    width: 480px;
+    border: none;
+    margin: 0 auto;
+    padding-top: 140px;
+}
+fieldset::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.counsel label {
+    display: block;
+    width: 110px; height: 35px;
+    line-height: 35px;
+    color: #fff;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 20px;
+    float: left;
+    margin-bottom: 15px;
+}
+.counsel input {
+    border: none;
+}
+.text {
+    width: 370px; height: 35px;
+    margin-bottom: 15px;
+    text-indent: 5px;
+    float: right;
+}
+.textBox {
+    width: 480px; height: 134px;
+    text-align: center;
+}
+.bt-counsel {
+    display: block;
+    width: 210px; height: 40px;
+    background: #ee403e;
+    font-size: 20px;
+    color: #fff;
+    margin: 23px auto 0;
+    cursor: pointer;
+}
+
+
+
+footer {
+    height: 72px;
+    background: #191919;
+}
+footer a {
+    display: block;
+    line-height: 72px;
+    text-align: center;
+    color: #a3a3a3;
+    font-size: 14px;
+    text-decoration: none;
+}
+footer span {
+    color: #ee403e;
+}
